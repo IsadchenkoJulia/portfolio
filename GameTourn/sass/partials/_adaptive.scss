@@ -1,0 +1,153 @@
+@media (max-width: 1750px){
+	.groups table{
+		width: 50%;
+		padding: 0 5%;
+		&:first-child+table+table{
+			border-left: none;
+			border-top: 1px solid $tab-pane-border;
+		}
+		&:first-child+table+table+table{
+			border-top: 1px solid $tab-pane-border;
+		}
+		&:first-child+table+table+table+table+table+table{
+			border-left: none;
+		}
+	}
+}
+
+// (min-width: 1200px)
+//@media #{$xl}{}
+
+// (max-width: 1199px)
+//@media #{$md}{}
+
+// (max-width: 991px)
+@media #{$sm}{
+	.top-header{
+		h1{
+			margin-top: 0;
+		}
+		nav{
+			margin-top: 100px;
+		}
+	}
+	.parallelogram span{
+		background: $paral-lol-sm;
+		margin-top: 70px;
+		margin-bottom: 70px;
+	}
+	.tourn-start{
+		.timer-unit-wrap{
+			width: 25%;
+			float: left;	
+		}		
+	}
+	.groups table{
+		padding: 0 2%;
+	}
+	#timer .timer-unit{
+		margin-left: 0;
+		float: none;
+		width: 100%;
+		padding: 0 10%;
+	}
+	.sponsors .sponsors-list a{
+		margin: 45px 30px;
+	}
+	.socials{
+		a{
+			margin-right: 25px;
+			margin-top: 5%;
+		}
+	}
+}
+
+// (max-width: 767px)
+@media #{$xs}{
+	.top-header{
+		.parallelogram span{
+			background: $paral-lol-sm;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+		h1{
+			font-size: $h1-fontsize-xs;
+			line-height: 1;
+		}
+	}
+	.video-live .video-live-body .vlb-wrapper .video-live-description .vld-left-side{
+		float: none;
+		width: 100%;
+		margin: 0 0 30px 0;
+	}
+	.video-live .video-live-body .vlb-wrapper .video-live-description .vld-right-side{
+		float: none;
+		width: 100%;
+		text-align: left;
+		.video-life-logo{
+			margin: 20px 0 0 0;
+		}
+	}
+	.about-us article{
+		margin: 35px 0!important;
+	}
+	.tourn-start h2{
+		padding: 0 10px;
+	}
+	#timer .timer-unit .timer-nmb{
+		font-size: $timer-nmb-size-xs;
+	}
+	.tourn-start .timer-wrap{
+		height: 212px;
+	}
+	.registration{
+		text-align: center;
+	}
+	.tourn-start .registration .btn{
+		margin: 35px 0;
+		padding: 10px 25px 5px;
+		font-size: $h4-fontsize;
+	}
+	.sponsors h2{
+		padding: 0 10px 20px;
+	}
+	.tourn-table .tourn-table-header h2{
+		text-align: center;
+		padding: 0 10px; 
+		margin: 5px 0;
+	}
+	.tourn-table-header .switch{
+		display: block;
+		margin: 0 auto 5px;
+	}
+	.tourn-table-wrapper{
+		padding: 50px 0 40px;
+	}
+	.list-inline > li{
+		padding-left: 1px;
+		padding-right: 1px;
+	}
+	.tourn-table-wrapper .nav-tabs li a{
+		font-size: $h5-fontsize;
+		padding: 5px 10px;
+		min-width: 27px;
+	}
+	.groups table{
+		width: 100%;
+		padding: 0 5%;
+		border: none!important;
+		border-top:  1px solid $tab-pane-border!important;
+		&:first-child{
+			border-top: none!important;
+		}
+	}
+	.socials{
+		text-align: center;
+		a{
+			margin: 12px;
+		}
+	}
+	footer .parallelogram{
+		text-align: center;
+	}
+}

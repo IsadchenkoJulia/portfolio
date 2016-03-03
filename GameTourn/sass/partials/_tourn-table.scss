@@ -1,0 +1,143 @@
+.table-font-style{	
+	h3{
+		font-size: $tab-pane-font-size;
+		color: $tab-pane-font-light;
+		text-transform: none;
+		margin: 0;
+		line-height: 1;
+		text-align: left;
+		white-space:  nowrap;
+		img{
+			margin: 0 10px 0 5px;
+			width: 65px;
+			height: 30px;
+		}
+		i{
+			width: 22px;
+		}
+	}
+}
+
+.tourn-table-wrapper{
+	padding: 150px 0 40px;
+	.nav > li{
+		display: inline-block;
+	}
+	.nav-tabs{
+		border-bottom: none;
+		li{
+			float: none;
+			a{
+				font-size: $h3-fontsize;
+				font-family: "norwester";
+				color: $tab-nav-font-base;
+				text-decoration: none;
+				background: $tab-nav-base-bg;
+				border: none;
+				border-radius: 0;
+				padding: 5px 16px;
+    			line-height: 1;
+				min-width: 57px;
+				&:hover, &:focus{
+					border: none;
+					color: $tab-nav-font-active;
+					background: $tab-nav-active-bg;
+				}
+			}
+			&.active a{
+				color: $tab-nav-font-active;
+				background: $tab-nav-active-bg;
+			}
+		}
+	}
+	.tab-pane{
+		background: $tab-pane-bg;
+		border: 1px solid $tab-pane-border;
+		@include box-shadow(5px 7px 25px -3px $base-dark);
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+}
+
+.g_gracket{
+	min-width: $bracket-min-size;
+	padding: 70px 30px 0;
+	&:before, &:after{
+	    content: " ";
+    	display: table;
+		clear: both;
+	}
+	.g_canvas{
+		display: none;
+	}
+	.g_round_label{
+		display: none;
+	}
+	.g_round{
+		float: left;
+		margin-right: 50px;
+		.g_game{
+			margin-bottom: 70px;
+			&.g_winner{
+				.g_team{
+					margin-left: 60px;
+					margin-top: -70px;
+					position: relative;
+					text-align: center;
+				}
+				.g_winner_txt{
+					font-size: $tab-pane-font-size;
+					color: $tab-pane-font-light;
+					font-family: "norwester";
+					text-transform: uppercase;
+					margin-bottom: 40px;
+					height: 30px;
+					display: block;
+				}
+				i.fa{
+					display: none;
+				}
+			}
+			.g_team{
+				@extend .table-font-style;
+			}
+			.g_vs{
+				font-size: $tab-pane-font-size;
+				color: $tab-pane-font-light;
+				font-family: "norwester";
+				margin-left: 47px;
+			}
+		}
+	}
+}
+
+.groups{
+	@extend .table-font-style;
+	width: 100%;
+	table{
+		width: 25%;
+		float: left;
+		border-left: 1px solid $tab-pane-border;
+		border-top: 1px solid $tab-pane-border;
+		border-collapse: separate;
+		border-spacing: 10px;
+		padding: 0 2%;
+		padding-top: 30px!important;
+		padding-bottom: 30px!important;
+		th, td{
+			font-size: $tab-pane-icons-size;
+			color: $tab-pane-font-light;
+			font-family: "norwester";
+			text-align: center;
+		}
+		td{
+			font-size: $tab-pane-font-size;
+		}
+		&:first-child, &:first-child+table, &:first-child+table+table, &:first-child+table+table+table{
+			border-top: none;
+		}
+		&:first-child, &:first-child+table+table+table+table{
+			border-left: none;
+		}
+	}
+}

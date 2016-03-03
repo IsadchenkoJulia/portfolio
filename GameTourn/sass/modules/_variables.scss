@@ -1,0 +1,47 @@
+// Header sizes
+$h1-fontsize: 10.94rem; //175px
+$h1-fontsize-xs: 5rem; //80px;
+$h2-fontsize: 2.813rem; //45px
+$h3-fontsize: 3.125rem; //50px
+$h4-fontsize: 2rem; //32px
+$h5-fontsize: 1rem; //16px
+
+// Simple text size
+$base-text: 0.875rem; //14px
+$base-font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+// Navigation link size
+$navigation-link-size: 2.188rem; //35px
+
+// Social icons size
+$social-icons-size: 2.25rem; //36px
+
+// Timer text size
+$timer-desc-size: 1.125rem; //18px
+$timer-nmb-size: 5.313rem; //85px
+$timer-nmb-size-xs: 3rem; //48rem
+
+// Tournament table
+$tab-pane-font-size: 1.563rem; //25px
+$tab-pane-icons-size: 1.875rem; //30px
+$bracket-min-size: 1040px;
+
+// Parallelogramm
+$lol-lg-path: "lol-lg.jpg";
+$paral-lol-lg: image-url($lol-lg-path) center;
+$lol-sm-path: "lol-sm.jpg";
+$paral-lol-sm: image-url($lol-sm-path) center;
+
+// Video life logo
+$vlg-path: "video-life-logo.jpg";
+$video-life-logo: image-url($vlg-path);
+
+// H2 border
+$h2-border-path: "border-bottom.jpg";
+$h2-border-bg: image-url($h2-border-path) no-repeat bottom center;
+
+// Media Queries
+$xs: "(max-width: 767px)";
+$sm: "(max-width: 991px)";
+$md: "(max-width: 1199px)";
+$lg: "(min-width: 1200px)";
