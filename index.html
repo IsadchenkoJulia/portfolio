@@ -1,0 +1,493 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Игровые турниры</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="wrapper container-fluid">
+			<section class="top-header row">
+				<div class="parallelogram row">
+					<a href="#"><span class="link1"></span></a>
+					<a href="#"><span class="link2"></span></a>
+					<a href="#"><span class="link3"></span></a>
+				</div><!--/.row-->
+				<div class="row">
+					<header>
+						<hgroup>
+							<h1>Name</h1>
+							<h3>Description</h3>
+						</hgroup>
+						<nav>
+							<ul class="list-inline text-center">
+								<li><a href="#">First</a></li>
+								<li><a href="#">Second</a></li>
+								<li><a href="#">Third</a></li>
+							</ul>
+						</nav>
+					</header>	
+				</div><!--/.row-->
+			</section><!--/.top-header-->
+		
+			<section class="video-live row">
+				<div class="video-live-header clearfix">
+					<div class="switch"> 
+						<input type="checkbox" id="switch-video" class="switch-check"> 
+						<label for="switch-video" class="switch-label"> 
+							check
+							<span></span> 
+						</label> 
+					</div><!--/.switch-->
+					<h2>Live</h2>
+				</div><!--/.video-live-header-->
+				<div class="video-live-body">
+					<div class="vlb-wrapper">
+						<div class="row">
+							<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+								<video controls>
+									<source src="https://www.youtube.com/embed/C0DPdy98e4c" type="video/mp4">
+									<source src="movie.ogg" type="video/ogg">
+									<p>Your browser does not support the video tag.</p>
+								</video>
+							</div>
+						</div><!--/.row-->
+						<div class="row">
+							<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+								<div class="video-live-description clearfix">
+									<div class="vld-left-side">
+										<h5>Континентальная лига</h5>
+										<p>Континетальная лига - это главный чемпионат СНГ по соревенованиям. 8 сильнейших команд вступили в  борьбу за 4 500 000 рублей и чемпионский кубок. Лучшая из них по итогам сезона поедет отстаивать честь нашего региона на международной арене.</p>
+									</div>
+									<div class="vld-right-side">
+										<h5>Name of transletion</h5>
+										<h5>Game title</h5>
+										<div class="video-life-logo"></div><!--/.$video-life-logo-->
+									</div>
+								</div><!--/.video-live-description-->
+							</div>
+						</div><!--/.row-->
+					</div><!--/.vlb-wrapper-->
+				</div><!--/.video-live-body-->
+			</section><!--/.video-live-->
+
+			<section class="about-us row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+					<article>
+						<h4>Кто мы?</h4>	
+						<p>Зима – не лучшее время года для компьютерного спорта. В Европе и Штатах крупные соревнования практически не проводятся, поэтому всё внимание игроков сосредоточено на онлайновых лигах и перестановках в командах. Впрочем, уже весной киберспорт снова заиграет яркими красками, и мы с трудом будем успевать следить за ходом хотя бы основных чемпионатов. Чтобы не пропустить самое интересное, мы выделили десять самых важных с нашей точки зрения игровых турниров в 2015 году.</p>
+					</article>
+					<article>
+						<h4>Цели турнира</h4>
+						<p>Зима – не лучшее время года для компьютерного спорта. В Европе и Штатах крупные соревнования практически не проводятся, поэтому всё внимание игроков сосредоточено на онлайновых лигах и перестановках в командах. Впрочем, уже весной киберспорт снова заиграет яркими красками, и мы с трудом будем успевать следить за ходом хотя бы основных чемпионатов. Чтобы не пропустить самое интересное, мы выделили десять самых важных с нашей точки зрения игровых турниров в 2015 году.</p>
+					</article>
+				</div>
+			</section><!--/.about-us-->
+
+			<section class="tourn-start row">
+				<h2>Начало турнира через:</h2>
+				<div class="timer-wrap">
+					<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+						<div id="timer" class="row">
+							<div class="days-hours col-lg-4 col-md-4 hidden-sm hidden-xs">
+								<div class="timer-unit" id="daysNum">
+									<span class="timer-nmb">-</span>
+									<span class="timer-desc">Дни</span>
+								</div><!--/.timer-unit-->
+								<div class="timer-unit" id="hoursNum">
+									<span class="timer-nmb">-</span>
+									<span class="timer-desc">Часы</span>
+								</div><!--/.timer-unit-->
+							</div><!--/.days-hours-->
+							<div class="game-logo-wrap col-lg-4 col-md-4 hidden-sm hidden-xs">
+								<div class="game-logo"></div>
+							</div><!--/.game-logo-wrap-->
+							<div class="minutes-seconds col-lg-4 col-md-4 hidden-sm hidden-xs">
+								<div class="timer-unit" id="minutesNum">
+									<span class="timer-nmb">-</span>
+									<span class="timer-desc">Минуты</span>
+								</div><!--/.timer-unit-->
+								<div class="timer-unit" id="secondsNum">
+									<span class="timer-nmb">-</span>
+									<span class="timer-desc">Секунды</span>
+								</div><!--/.timer-unit-->
+							</div><!--/.minutes-seconds-->
+							
+							<div class="timer-small-screen hidden-lg hidden-md col-sm-12 col-xs-12">
+								<div class="timer-unit-wrap">
+									<div class="timer-unit" id="daysNum">
+										<span class="timer-nmb">-</span>
+										<span class="timer-desc">Дни</span>
+									</div><!--/.timer-unit-->
+								</div>
+								<div class="timer-unit-wrap">	
+									<div class="timer-unit" id="hoursNum">
+										<span class="timer-nmb">-</span>
+										<span class="timer-desc">Часы</span>
+									</div><!--/.timer-unit-->
+								</div>
+								<div class="timer-unit-wrap">
+									<div class="timer-unit" id="minutesNum">
+										<span class="timer-nmb">-</span>
+										<span class="timer-desc">Минуты</span>
+									</div><!--/.timer-unit-->
+								</div>
+								<div class="timer-unit-wrap">
+									<div class="timer-unit" id="secondsNum">
+										<span class="timer-nmb">-</span>
+										<span class="timer-desc">Секунды</span>
+									</div><!--/.timer-unit-->
+								</div>
+							</div><!--/.timer-small-screen-->
+						</div><!--/#timer-->
+					</div>
+				</div><!--/.timer-wrap-->
+				<div class="registration col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+					<a href="#"><button class="btn" type="submit">Регистрация</button></a>
+				</div><!--/.registration-->
+			</section>
+			
+			<section class="sponsors row">
+				<h2>Наши спонсоры</h2>
+				<div class="sponsors-list col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+					<a href="#"><img src="images/sponsor-1.jpg" alt="sponsor"></a>
+					<a href="#"><img src="images/sponsor-2.jpg" alt="sponsor"></a>
+					<a href="#"><img src="images/sponsor-1.jpg" alt="sponsor"></a>
+					<a href="#"><img src="images/sponsor-2.jpg" alt="sponsor"></a>
+					<a href="#"><img src="images/sponsor-1.jpg" alt="sponsor"></a>
+				</div>
+			</section>
+			
+			<section class="tourn-table row">
+				<div class="tourn-table-header clearfix">
+					<h2 class="hidden-lg hidden-md hidden-sm">Турнирная таблица</h2>
+					<div class="switch"> 
+						<input type="checkbox" id="switch-table" class="switch-check"> 
+						<label for="switch-table" class="switch-label"> 
+							check
+							<span></span> 
+						</label> 
+					</div><!--/.switch-->
+					<h2 class="hidden-xs">Турнирная таблица</h2>
+				</div><!--/.tourn-table-header-->
+				<div class="tourn-table-body clearfix col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="tourn-table-wrapper col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+						<ul class="nav nav-tabs list-inline text-center">
+							<li class="active"><a href="#tab1" data-toggle="tab">1</a></li>
+							<li><a href="#tab2" data-toggle="tab">2</a></li>
+							<li><a href="#tab3" data-toggle="tab">3</a></li>
+							<li><a href="#tab4" data-toggle="tab">4</a></li>
+							<li><a href="#tab5" data-toggle="tab">5</a></li>
+							<li><a href="#tab6" data-toggle="tab">6</a></li>
+							<li><a href="#tab7" data-toggle="tab">7</a></li>
+							<li><a href="#tab8" data-toggle="tab">8</a></li>
+						</ul><!--/.nav-tabs-->
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<div class="bracket"></div>
+							</div><!--/#tab1-->
+							<div class="tab-pane" id="tab2">
+								<div class="groups clearfix">
+									<table>
+										<tr>
+											<th colspan="3">Group A</th>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+											<td><i class="fa fa-check"></i></td>
+											<td><i class="fa fa-times"></i></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 1">&nbsp;Team 1&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 2">&nbsp;Team 2&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 3">&nbsp;Team 3&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 4">&nbsp;Team 5&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+									</table>
+									
+									<table>
+										<tr>
+											<th colspan="3">Group B</th>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+											<td><i class="fa fa-check"></i></td>
+											<td><i class="fa fa-times"></i></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 1">&nbsp;Team 1&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 2">&nbsp;Team 2&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 3">&nbsp;Team 3&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 4">&nbsp;Team 5&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+									</table>
+									
+									<table>
+										<tr>
+											<th colspan="3">Group C</th>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+											<td><i class="fa fa-check"></i></td>
+											<td><i class="fa fa-times"></i></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 1">&nbsp;Team 1&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 2">&nbsp;Team 2&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 3">&nbsp;Team 3&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 4">&nbsp;Team 5&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+									</table>
+									
+									<table>
+										<tr>
+											<th colspan="3">Group D</th>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+											<td><i class="fa fa-check"></i></td>
+											<td><i class="fa fa-times"></i></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 1">&nbsp;Team 1&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 2">&nbsp;Team 2&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 3">&nbsp;Team 3&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 4">&nbsp;Team 5&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+									</table>
+									
+									<table>
+										<tr>
+											<th colspan="3">Group E</th>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+											<td><i class="fa fa-check"></i></td>
+											<td><i class="fa fa-times"></i></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 1">&nbsp;Team 1&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 2">&nbsp;Team 2&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 3">&nbsp;Team 3&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 4">&nbsp;Team 5&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+									</table>
+
+									<table>
+										<tr>
+											<th colspan="3">Group F</th>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+											<td><i class="fa fa-check"></i></td>
+											<td><i class="fa fa-times"></i></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 1">&nbsp;Team 1&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 2">&nbsp;Team 2&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 3">&nbsp;Team 3&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 4">&nbsp;Team 5&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+									</table>
+
+									<table>
+										<tr>
+											<th colspan="3">Group G</th>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+											<td><i class="fa fa-check"></i></td>
+											<td><i class="fa fa-times"></i></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 1">&nbsp;Team 1&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 2">&nbsp;Team 2&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 3">&nbsp;Team 3&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 4">&nbsp;Team 5&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+									</table>
+									
+									<table>
+										<tr>
+											<th colspan="3">Group H</th>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+											<td><i class="fa fa-check"></i></td>
+											<td><i class="fa fa-times"></i></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 1">&nbsp;Team 1&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 2">&nbsp;Team 2&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 3">&nbsp;Team 3&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+										<tr>
+											<td><h3><img class="g_logo" src="images/logo.jpg" alt="Team 4">&nbsp;Team 5&nbsp;</h3></td>
+											<td><big>0</big></td>
+											<td><big>0</big></td>
+										</tr>
+									</table>
+								</div><!--/.groups-->
+							</div><!--/#tab2-->
+							<div class="tab-pane" id="tab3"></div>
+							<div class="tab-pane" id="tab4"></div>
+							<div class="tab-pane" id="tab5"></div>
+							<div class="tab-pane" id="tab6"></div>
+							<div class="tab-pane" id="tab7"></div>
+							<div class="tab-pane" id="tab8"></div>
+						</div>	<!--/.tab-content-->
+					</div><!--/.tourn-table-wrapper-->
+				</div><!--/.tourn-table-body-->
+			</section>
+
+			<footer class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+					<div class="row">	
+						<div class="socials col-lg-8 col-md-8 col-sm-8 col-xs-12">
+							<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="#" class="youtube" class="twitter"><i class="fa fa-youtube"></i></a>
+							<a href="#" class="vk"><i class="fa fa-vk"></i></a>
+							<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="#" class="twitch"><i class="fa fa-twitch"></i></a>
+						</div><!--/.socials-->
+						<div class="parallelogram col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<a href="#"><span class="link1"></span></a>
+							<a href="#"><span class="link2"></span></a>
+							<a href="#"><span class="link3"></span></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div><!--/.container-fluid-->
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script type="text/javascript" src="javascripts/bootstrap.js"></script>
+		<script type="text/javascript" src="javascripts/timer.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.gracket.js"></script>
+		<script type="text/javascript" src="javascripts/gracket.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+

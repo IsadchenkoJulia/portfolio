@@ -1,0 +1,15 @@
+.parallelogram{
+	text-align: center;
+	span{
+		width: 25%;
+		height: 0;
+		padding-top: 30%;
+		@include skew(-15deg, 0);
+		@include box-shadow(7px -7px 7px -3px #000);
+		background: $paral-lol-lg;
+		display: inline-block;
+		margin: 100px 0;
+		margin-left: 1%;
+		margin-right: 2%;
+	}
+}

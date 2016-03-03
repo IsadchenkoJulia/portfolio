@@ -1,0 +1,26 @@
+.socials{
+	a{
+		margin-right: 50px;
+		margin-top: 6%;
+		display: inline-block;
+		color: $text-light;
+		i{
+			font-size: $social-icons-size;
+		}
+		&.twitter:hover{
+			color: $twitter-icon-hover;
+		}
+		&.youtube:hover{
+			color: $youtube-icon-hover;
+		}
+		&.vk:hover{
+			color: $vk-icon-hover;
+		}
+		&.facebook:hover{
+			color: $facebook-icon-hover;
+		}
+		&.twitch:hover{
+			color: $twitch-icon-hover;
+		}
+	}
+}
